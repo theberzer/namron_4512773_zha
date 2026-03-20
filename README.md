@@ -1,16 +1,16 @@
 
-# Namron 4512772 Zigbee 8-Button Switch – ZHA Custom Quirk & Home Assistant Blueprint
+# Namron 4512773 Zigbee 8-Button Switch – ZHA Custom Quirk & Home Assistant Blueprint
 
 ## Overview
 
-This repository contains a **custom ZHA quirk** and a **Home Assistant automation blueprint** for the Namron 8-button Zigbee switch (model 4512772).  
+This repository contains a **custom ZHA quirk** and a **Home Assistant automation blueprint** for the Namron 8-button Zigbee switch (model 4512773).  
 The combination enables full support for all short and long button presses, giving you precise control over automations in Home Assistant.
 
 ---
 
 ## Why Use This Quirk?
 
-The Namron 4512772 is not fully supported out-of-the-box in ZHA/Home Assistant.  
+The Namron 4512773 is not fully supported out-of-the-box in ZHA/Home Assistant.  
 Only the "Identify" button typically works, while the rest of the buttons do not appear as triggers in the Home Assistant automation UI.
 
 By installing this custom quirk, the switch exposes *all* its buttons as device triggers, supporting:
@@ -38,7 +38,7 @@ The included **automation blueprint** makes it easy to use these triggers to con
 
 ### 1. Copy the Quirk
 
-1. Place the custom quirk Python file (`namron_4512772_zha.py`) in your Home Assistant instance at:
+1. Place the custom quirk Python file (`namron_4512773_zha.py`) in your Home Assistant instance at:
 
    ```
    /config/custom_zha_quirks/
@@ -57,13 +57,13 @@ The included **automation blueprint** makes it easy to use these triggers to con
 
 ### 2. Pair the Device
 
-- Remove and re-add the Namron 4512772 switch via ZHA.
+- Remove and re-add the Namron 4512773 switch via ZHA.
 - All button actions will now appear as device triggers!
 
 ### 3. Import the Blueprint
 
 1. In Home Assistant, go to **Settings > Automations & Scenes > Blueprints**.
-2. Click **Import Blueprint** and paste the YAML from [`blueprint.yaml`](namron_4512772_blueprint.yaml) in this repo.
+2. Click **Import Blueprint** and paste the YAML from [`blueprint.yaml`](namron_4512773_blueprint.yaml) in this repo.
 3. Save the blueprint.
 
 ### 4. Create Automations
@@ -77,7 +77,7 @@ The included **automation blueprint** makes it easy to use these triggers to con
 
 **What the quirk does:**
 
-- Registers all buttons and actions of the Namron 4512772 as ZHA device automations.
+- Registers all buttons and actions of the Namron 4512773 as ZHA device automations.
 - Triggers are exposed with clear names:
   - `short_press` / `long_hold` / `long_release`
   - `channel_1_on`, `channel_1_off`, ... up to `channel_4_on`, `channel_4_off`
@@ -134,3 +134,4 @@ trigger:
 Developed and maintained by MAFL74  
 [GitHub profile](https://github.com/MAFL74)  
 Feel free to open an issue or pull request!
+

@@ -1,1 +1,2 @@
-from .namron_4512772_zha import Namron4512772
+from .namron_4512773_zha import Namron4512773
+

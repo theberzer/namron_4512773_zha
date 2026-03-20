@@ -1,5 +1,5 @@
 blueprint:
-  name: ZHA - Namron Multi-Channel Zigbee Switch (model 4512772)
+  name: ZHA - Namron Multi-Channel Zigbee Switch (model 4512773)
   description: Control lights and more with Namron Zigbee 1-4 channel switch using ZHA. Supports short_press, long_hold and long_release for all channels (quirk required).
   domain: automation
   input:
@@ -239,3 +239,4 @@ action:
         sequence: !input channel_4_on_long_hold
       - conditions: "{{ trigger.id == 'channel_4_on_long_release' }}"
         sequence: !input channel_4_on_long_release
+

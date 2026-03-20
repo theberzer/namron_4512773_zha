@@ -1,4 +1,4 @@
-""" MAFL74 - Quirk for Namron 8-button Zigbee Switch 4512772 """
+""" MAFL74 - Quirk for Namron 8-button Zigbee Switch 4512773 """
 from zhaquirks.const import (
     MODELS_INFO,
     ENDPOINTS,
@@ -9,9 +9,9 @@ from zhaquirks.const import (
 )
 from zigpy.quirks import CustomDevice
 
-class Namron4512772(CustomDevice):
+class Namron4512773(CustomDevice):
     signature = {
-        MODELS_INFO: [("NAMRON AS", "4512772")],
+        MODELS_INFO: [("NAMRON AS", "4512773")],
         ENDPOINTS: {
             1: {
                 PROFILE_ID: 0x0104,
@@ -57,7 +57,7 @@ class Namron4512772(CustomDevice):
 
     # Only endpoint 1 exposes battery (PowerConfiguration) and firmware (OTA)
     replacement = {
-        MODELS_INFO: [("NAMRON AS", "4512772")],
+        MODELS_INFO: [("NAMRON AS", "4512773")],
         ENDPOINTS: {
             1: {
                 PROFILE_ID: 0x0104,
@@ -123,3 +123,4 @@ class Namron4512772(CustomDevice):
         ("long_hold",   "channel_4_on"):  {"command": "move_with_on_off", "endpoint_id": 4, "cluster_id": 0x0008},
         ("long_release","channel_4_on"):  {"command": "stop_with_on_off", "endpoint_id": 4, "cluster_id": 0x0008},
     }
+
